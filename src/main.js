@@ -38,6 +38,7 @@ function getImagesByName(name) {
 }
 
 function onFormSubmit(event) {
+  refs.gallery.innerHTML = '';
   event.preventDefault();
   toggleLoader();
   const query = event.target.elements.query.value;
